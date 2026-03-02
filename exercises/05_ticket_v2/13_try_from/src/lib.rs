@@ -8,6 +8,22 @@ enum Status {
     Done,
 }
 
+impl TryFrom<String> for Status {
+    type Error;
+
+    fn try_from(value: String) -> Result<Self, Self::Error> {
+        todo!()
+    }
+}
+
+impl TryFrom<&str> for Status {
+    type Error;
+
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
+        todo!()
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
